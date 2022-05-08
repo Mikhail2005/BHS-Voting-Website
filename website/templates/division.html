@@ -3,5 +3,20 @@
 {% block title %}Choosing Your Division{% endblock %}
 
 {% block content %}
-<H1>Hello</H1>
+<h1 class="h1_division">Please Choose Your Division</h1>
+
+<div class="division_div">
+<p class="division_paragraph">List of Divisions:</p>
+<form class="division_form">
+    <input type="radio" id="north" name="choose_division" value="North_Division">
+    <label for="north">North Division</label><br>
+    <input type="radio" id="south" name="choose_division" value="South_Division">
+    <label for="south">South Division</label><br>
+    <input type="radio" id="west" name="choose_division" value="West_Division">
+    <label for="west">West Division</label>
+    <br>
+    <button class="button_main" type="submit">Submit</button>
+  </form>
+  </div>
+
 {% endblock %}
