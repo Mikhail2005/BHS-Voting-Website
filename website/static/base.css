@@ -38,11 +38,12 @@ html {
 .button_main {
     background-color:aquamarine;
     border-radius: 10px;
+    outline-style: inset;
     color: black;
     text-align: center;
     text-decoration:solid;
     display: inline-block;
-    font-size: 16px;
-    padding: 5px 20px;
+    font-size: 19px;
+    padding: 7px 25px;
     margin-top: 20px;
 }
