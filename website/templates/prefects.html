@@ -1,1 +1,26 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %}Profiles{% endblock %} {% block
+content %}
+<h1 class="prefects_header">Prefect Profiles</h1>
+
+<div  class="prefects_div">
+  <!-- Start of Profiles -->
+  {% for i in results %}
+  <img
+    src="{{ url_for('static', filename='images/Prefect Image Placeholder.jpg') }}"
+    alt="Prefect Placeholder"
+    class="prefects_image_div"
+  />
+  
+
+  <h3 class="name_prefects">Name: {{i.name}}</h3>
+
+  <button class="collapsible">About Me:</button>
+  <div class="content">
+    <p>
+{{i.description}}
+    </p>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

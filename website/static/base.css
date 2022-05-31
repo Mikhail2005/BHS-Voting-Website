@@ -1,7 +1,33 @@
-.h1_division {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+
+/* General CSS */
+
+html, body {
+    background-color:#FAF9F6;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+}
+
+.button_main {
+    background-color:aquamarine;
+    border-radius: 10px;
+    outline-style: inset;
+    color: black;
+    text-align: center;
+    text-decoration:solid;
+    display: inline-block;
+    font-size: 19px;
+    padding: 7px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* 'Division' Page CSS (Start) */
+
+.division_header {
     font-size: 50px;  
     text-align: center;
+    text-decoration: underline;
 }
 
 .division_form {
@@ -29,21 +55,96 @@
     border-style:ridge;
 }
 
+/* 'Prefects' Page CSS Start */
 
-html {
+.prefects_div {
     background-color:#FAF9F6;
+    border-color: black;
+    border-width: 2px;
+    border-style:ridge;
+    height: 90%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 4%;
+}
+
+.prefects_header {
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+.prefects_image_div {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 25vw;
+    max-height: 25vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
     
 }
 
-.button_main {
-    background-color:aquamarine;
-    border-radius: 10px;
-    outline-style: inset;
-    color: black;
-    text-align: center;
-    text-decoration:solid;
-    display: inline-block;
-    font-size: 19px;
-    padding: 7px 25px;
-    margin-top: 20px;
-}
+.collapsible {
+    background-color:aqua ;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-top: 1.5%;
+    font-weight: bold;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "down" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "up arrow" sign (-) */
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: #FAF9F6;
+  }
+
+  .name_prefects {
+      margin-left: 2%;
+      margin-top: 3%;
+      font-size: 22px;
+  }
+
+/* Mobile CSS */
+
+  @media only screen and (max-width: 600px) {
+    .prefects_div {
+            background-color:#FAF9F6;
+            height: 90%;
+            margin-top: 4%;
+    }
+    .prefects_header {
+      text-align: center;
+      font-size: 30px;
+      text-decoration: underline;
+    }
+    .name_prefects {
+    margin-left: 2%;
+    margin-top: 3%;
+    font-size: 18px;
+    }
+  }
